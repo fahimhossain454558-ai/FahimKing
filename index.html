@@ -151,6 +151,8 @@
 
     .repo-icon svg { width: 16px; height: 16px; }
     h2 { margin: 0; font-size: 16px; line-height: 1.4; letter-spacing: -.02em; overflow-wrap: anywhere; }
+    h2 a { color: inherit; text-decoration: none; }
+    h2 a:hover { color: var(--green); text-decoration: underline; }
     .card p { margin: 8px 0 18px; color: var(--muted); font-size: 13px; }
 
     .project-link {
@@ -252,29 +254,29 @@
   <footer>
     <div class="wrap">
       <span>Made by Fahim · <span id="year"></span></span>
-      <span>Project links open GitHub repositories.</span>
+      <span>Project names open live sites when available; repository links open GitHub.</span>
     </div>
   </footer>
 
   <script>
     const projects = [
-      { name: "fahimhossain454558-ai.github.io", category: "Portfolio", description: "Personal GitHub Pages repository." },
-      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026-V2-15-11-2026", category: "Trade licence", description: "Bangladesh trade licence project · version dated 15 Nov 2026." },
-      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026-V2-14-11-2026", category: "Trade licence", description: "Bangladesh trade licence project · version dated 14 Nov 2026." },
-      { name: "Luxury-Cv", category: "Creative", description: "A luxury CV and résumé project." },
-      { name: "Nagad-Uddokta-Paper-Ready-V2", category: "Nagad", description: "Nagad Uddokta paper-ready project · version 2." },
-      { name: "Nagad-Uddokta-Paper-Ready", category: "Nagad", description: "Nagad Uddokta paper-ready project." },
-      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026-V2-10-11-2026", category: "Trade licence", description: "Bangladesh trade licence project · version dated 10 Nov 2026." },
-      { name: "Alumni-Reunion-2026", category: "Community", description: "Alumni reunion project for 2026." },
-      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026-V2", category: "Trade licence", description: "Bangladesh trade licence project · version 2." },
-      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026", category: "Trade licence", description: "Bangladesh trade licence project." },
-      { name: "BANGLADESH-TRADE-LICENCE-WITH-SUPERVISOR-SIGNATURE", category: "Trade licence", description: "Trade licence project with supervisor signature." },
-      { name: "Bangladesh-Trade-Licence-Mobile-Version", category: "Trade licence", description: "Mobile version of the Bangladesh trade licence project." },
-      { name: "Muradpur-Adarsha-High-School-Punormilon", category: "Community", description: "Muradpur Adarsha High School reunion project." },
-      { name: "Nagad-Custom-QR-Code", category: "Nagad", description: "Custom QR code project for Nagad." },
-      { name: "BD-Trade-Licence-Professional", category: "Trade licence", description: "Professional Bangladesh trade licence project." },
-      { name: "trade-licence-spa", category: "Trade licence", description: "Single-page trade licence application." },
-      { name: "BD-Trade-Licence", category: "Trade licence", description: "Bangladesh trade licence project." }
+      { name: "fahimhossain454558-ai.github.io", category: "Portfolio", description: "Personal GitHub Pages repository; no live page is currently available." },
+      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026-V2-15-11-2026-", category: "Trade licence", description: "Bangladesh trade licence project · version dated 15 Nov 2026.", website: "https://fahimhossain454558-ai.github.io/BANGLADESH-TRADE-LICENCE-08-11-2026-V2-15-11-2026-/" },
+      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026-V2-14-11-2026", category: "Trade licence", description: "Bangladesh trade licence project · version dated 14 Nov 2026.", website: "https://fahimhossain454558-ai.github.io/BANGLADESH-TRADE-LICENCE-08-11-2026-V2-14-11-2026/" },
+      { name: "Luxury-Cv", category: "Creative", description: "A luxury CV and résumé project.", website: "https://fahimhossain454558-ai.github.io/Luxury-Cv/" },
+      { name: "Nagad-Uddokta-Paper-Ready-V2", category: "Nagad", description: "Nagad Uddokta paper-ready project · version 2.", website: "https://fahimhossain454558-ai.github.io/Nagad-Uddokta-Paper-Ready-V2/" },
+      { name: "Nagad-Uddokta-Paper-Ready", category: "Nagad", description: "Nagad Uddokta paper-ready project.", website: "https://fahimhossain454558-ai.github.io/Nagad-Uddokta-Paper-Ready/" },
+      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026-V2-10-11-2026", category: "Trade licence", description: "Bangladesh trade licence project · version dated 10 Nov 2026.", website: "https://fahimhossain454558-ai.github.io/BANGLADESH-TRADE-LICENCE-08-11-2026-V2-10-11-2026/" },
+      { name: "Alumni-Reunion-2026", category: "Community", description: "Alumni reunion project for 2026.", website: "https://fahimhossain454558-ai.github.io/Alumni-Reunion-2026/" },
+      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026-V2", category: "Trade licence", description: "Bangladesh trade licence project · version 2.", website: "https://fahimhossain454558-ai.github.io/BANGLADESH-TRADE-LICENCE-08-11-2026-V2/" },
+      { name: "BANGLADESH-TRADE-LICENCE-08-11-2026", category: "Trade licence", description: "Bangladesh trade licence project.", website: "https://fahimhossain454558-ai.github.io/BANGLADESH-TRADE-LICENCE-08-11-2026/" },
+      { name: "BANGLADESH-TRADE-LICENCE-WITH-SUPERVISOR-SIGNATURE", category: "Trade licence", description: "Trade licence project with supervisor signature.", website: "https://fahimhossain454558-ai.github.io/BANGLADESH-TRADE-LICENCE-WITH-SUPERVISOR-SIGNATURE/" },
+      { name: "Bangladesh-Trade-Licence-Mobile-Version", category: "Trade licence", description: "Mobile version of the Bangladesh trade licence project.", website: "https://fahimhossain454558-ai.github.io/Bangladesh-Trade-Licence-Mobile-Version/" },
+      { name: "Muradpur-Adarsha-High-School-Punormilon", category: "Community", description: "Muradpur Adarsha High School reunion project.", website: "https://fahimhossain454558-ai.github.io/Muradpur-Adarsha-High-School-Punormilon/" },
+      { name: "Nagad-Custom-QR-Code", category: "Nagad", description: "Custom QR code project for Nagad.", website: "https://fahimhossain454558-ai.github.io/Nagad-Custom-QR-Code/" },
+      { name: "BD-Trade-Licence-Professional", category: "Trade licence", description: "Professional Bangladesh trade licence project.", website: "https://fahimhossain454558-ai.github.io/BD-Trade-Licence-Professional/" },
+      { name: "trade-licence-spa", category: "Trade licence", description: "Single-page trade licence application.", website: "https://fahimhossain454558-ai.github.io/trade-licence-spa/" },
+      { name: "BD-Trade-Licence", category: "Trade licence", description: "Bangladesh trade licence project.", website: "https://fahimhossain454558-ai.github.io/BD-Trade-Licence/" }
     ];
 
     const projectGrid = document.querySelector("#projects");
@@ -300,7 +302,7 @@
                 <svg viewBox="0 0 16 16" fill="none"><path d="M5 3.5H4A1.5 1.5 0 0 0 2.5 5v7A1.5 1.5 0 0 0 4 13.5h7a1.5 1.5 0 0 0 1.5-1.5v-1M8 2.5h5.5V8M13.25 2.75 7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
             </div>
-            <h2>${project.name}</h2>
+            <h2><a href="${project.website || `https://github.com/fahimhossain454558-ai/${encodeURIComponent(project.name)}`}" target="_blank" rel="noopener noreferrer">${project.name}</a></h2>
             <p>${project.description}</p>
             <a class="project-link" href="https://github.com/fahimhossain454558-ai/${encodeURIComponent(project.name)}" target="_blank" rel="noopener noreferrer">
               View repository
